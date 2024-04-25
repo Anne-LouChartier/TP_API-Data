@@ -3,6 +3,7 @@ from rest_framework import generics
 from TP_api_django.models import EggGroup, Item, Location, Move, Pokemon, PokemonEggGroup, PokemonFormGeneration, PokemonMove, PokemonStat, PokemonType, Stat, Type
 from TP_api_django.serializers import EggGroupSerializer, ItemSerializer, LocationSerializer, MoveSerializer, PokemonSerializer, PokemonEggGroupSerializer, PokemonFormGenerationSerializer, PokemonMoveSerializer, PokemonStatSerializer, PokemonTypeSerializer, StatSerializer, TypeSerializer
 
+
 # Create your views here.
 class EggGroupList(generics.ListCreateAPIView):
     queryset = EggGroup.objects.all()

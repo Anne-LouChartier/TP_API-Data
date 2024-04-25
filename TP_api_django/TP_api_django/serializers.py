@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from .models import EggGroup, Item, Location, Move, Pokemon, PokemonEggGroup, PokemonFormGeneration, PokemonMove, PokemonStat, PokemonType, Stat, Type
 
+
 class EggGroupSerializer(serializers.ModelSerializer):
     class Meta:
         model = EggGroup
